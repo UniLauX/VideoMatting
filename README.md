@@ -1,6 +1,6 @@
 # VideoMatting
 
-The design and implementation of interactive video cutout system. <br>
+The design and implementation of interactive video cutout system. 2013 <br>
 [Yu Liu](https://sites.google.com/site/yuliuunilau/home)' bachelor thesis in Software Engineering, Southwest University. <br>
 Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang University), Kaijin Qiu(Southwest University).
 
