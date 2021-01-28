@@ -5,8 +5,8 @@ The design and implementation of interactive video cutout system. <br>
 Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang University), Kaijin Qiu(Southwest University).
 
 ## Thesis and Demo
-[Bachelor Thesis](https://drive.google.com/file/d/1gKGaUhhrVTZFG1N7YknHF86F6KBQb8Zv/view)
-Video Demo
+[Bachelor Thesis](https://drive.google.com/file/d/1gKGaUhhrVTZFG1N7YknHF86F6KBQb8Zv/view) <br>
+[Software Video Demo](https://www.youtube.com/watch?v=sVaJevQcH-g&feature=youtu.be)
 
 #### Abstract
 As a vital research direction of computer vision, Video Cutout System can track and predict
