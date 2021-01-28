@@ -2,7 +2,7 @@
 
 The design and implementation of interactive video cutout system. <br>
 Bachelor Thesis of Yu Liu in Software Engineering, Southwest University. <br>
-Supervisor: Guofeng Zhang(Zhejiang University), Kaijin Qiu(Southwest University).
+Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang University), Kaijin Qiu(Southwest University).
 
 Video Demo
 
