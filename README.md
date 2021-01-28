@@ -1,13 +1,12 @@
 # VideoMatting
 
 The design and implementation of interactive video cutout system. <br>
-Bachelor Thesis of [Yu Liu](https://sites.google.com/site/yuliuunilau/home) in Software Engineering, Southwest University. <br>
+[Yu Liu](https://sites.google.com/site/yuliuunilau/home)' bachelor thesis in Software Engineering, Southwest University. <br>
 Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang University), Kaijin Qiu(Southwest University).
 
 ## Thesis and Demo
 [Bachelor Thesis](https://drive.google.com/file/d/1gKGaUhhrVTZFG1N7YknHF86F6KBQb8Zv/view)
 Video Demo
-
 
 #### Abstract
 As a vital research direction of computer vision, Video Cutout System can track and predict
