@@ -45,5 +45,5 @@ This work is done by Yu Liu was a Internship at State Key Lab of CAD and CG, wor
 The design and implementation of interactive video cutout system. Yu Liu, Guofeng Zhang, Kaijin Qiu, 2013
 
 #### 7. Support
-Please feel free to contact me if you have any problem.
+Please feel free to contact me if you have any problem. @ Yu.Liu@roboticvision.org
 
