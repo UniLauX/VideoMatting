@@ -5,14 +5,15 @@ Bachelor Thesis of Yu Liu in Software Engineering, Southwest University.
 
 Video Demo
 
-## Environment
+#### Environment
 
 
 
-Acknowledgement: This work is done by Yu Liu was a Internship at State Key Lab of CAD and CG, work with Prof. Guofeng Zhang. The prototype software was based on some implementation from Computer Vision Group of  State Key Lab of CAD and CG, Zhejiang University.
+#### Acknowledgement: 
+This work is done by Yu Liu was a Internship at State Key Lab of CAD and CG, work with Prof. Guofeng Zhang. The prototype software was based on some implementation from Computer Vision Group of  State Key Lab of CAD and CG, Zhejiang University.
 
 
-Reference:
+#### Reference:
 @article{rother2004grabcut,
   title={" GrabCut" interactive foreground extraction using iterated graph cuts},
   author={Rother, Carsten and Kolmogorov, Vladimir and Blake, Andrew},
