@@ -6,8 +6,9 @@ Bachelor Thesis of Yu Liu in Software Engineering, Southwest University.
 Video Demo
 
 #### Environment
-
-
+Visual Studio 2010
+C++
+OpenCV 2.4.10
 
 #### Acknowledgement: 
 This work is done by Yu Liu was a Internship at State Key Lab of CAD and CG, work with Prof. Guofeng Zhang. The prototype software was based on some implementation from Computer Vision Group of  State Key Lab of CAD and CG, Zhejiang University.
