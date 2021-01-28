@@ -1,6 +1,6 @@
 # VideoMatting
 
-The design and implementation of interactive video cutout system. 2013 <br>
+The design and implementation of interactive video cutout system, 2013. <br>
 [Yu Liu](https://sites.google.com/site/yuliuunilau/home)' bachelor thesis in Software Engineering, Southwest University. <br>
 Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang University), Kaijin Qiu(Southwest University).
 
@@ -11,7 +11,7 @@ Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang Un
 #### Abstract
 As a vital research direction of computer vision, Video Cutout System can track and predict
 motion of the object dynamically in video sequences. It has been widely used in many fields, such
-as national defense,transportation, etc.
+as national defense,transportation, etc. 
 In the text, it mainly discuss about the design and Implementation of interactive video cutout
 system. Firstly, the text describle and analysis the algorithm principle of GrabCut used in still
 image and Video SnapCut in Video sequences in detail. Secondly, with the software way, GrabCut
