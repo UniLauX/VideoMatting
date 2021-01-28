@@ -32,7 +32,7 @@ C++ <br>
 OpenCV 2.4.10 and CxImage <br>
 
 #### Acknowledgement: 
-This work is done by Yu Liu was a Internship at State Key Lab of CAD and CG, work with Prof. Guofeng Zhang. The prototype software was based on some implementation from Computer Vision Group of  State Key Lab of CAD and CG, Zhejiang University.
+This work is done by Yu Liu was a Internship at State Key Lab of CAD and CG, work with Prof. Guofeng Zhang. The prototype software was based on some implementation from [Computer Vision Group](http://www.zjucvg.net/) of  State Key Lab of CAD and CG, Zhejiang University.
 
 
 #### Cite:
