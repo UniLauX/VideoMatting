@@ -1,7 +1,7 @@
 # VideoMatting
 
 The design and implementation of interactive video cutout system. <br>
-Bachelor Thesis of Yu Liu in Software Engineering, Southwest University. <br>
+Bachelor Thesis of [Yu Liu](https://sites.google.com/site/yuliuunilau/home) in Software Engineering, Southwest University. <br>
 Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang University), Kaijin Qiu(Southwest University).
 
 Video Demo
