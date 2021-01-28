@@ -1,0 +1,2 @@
+copy /Y "D:\dongzilong\work\myprojects\simpleimage\simpleimage\*.h" "Z:\Vision\Image\simpleimage\include\"
+copy /Y "D:\dongzilong\work\myprojects\simpleimage\lib\*.*" "Z:\Vision\Image\simpleimage\lib\"

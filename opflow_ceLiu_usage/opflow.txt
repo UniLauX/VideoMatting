@@ -1,0 +1,79 @@
+static Wml::GMatrix<Wml::Vector2f> OpticalFlow(CameraFrame* pFrm, CameraFrame* pRfFrm, double alpha = 0.01, double Rt = 0.75, int MnWd = 30, int ItrNm_OtFwPDE = 15, int ItrNm_InFwPDE = 1, int ItrNm_CG = 40);
+
+Wml::GMatrix<Wml::Vector2d> CBinocularStereo::OpticalFlow(CameraFrame* pFrm, CameraFrame* pRfFrm, double alpha, double Rt, int MnWd, int ItrNm_OtFwPDE, int ItrNm_InFwPDE, int ItrNm_CG)
+{
+	printf("Optical Flow: Frame %d - %d\n", pFrm->frameno, pRfFrm->frameno);
+
+	int iWidth = pFrm->m_iWidth;
+	int iHeight = pFrm->m_iHeight;
+
+	Wml::GMatrix<Wml::Vector3f> ImgRGB(iWidth, iHeight);
+	Wml::GMatrix<bool> VsbMp(iWidth, iHeight);
+
+	CxImage Img;
+	Img.Load(pFrm->ImgFileName().c_str());
+	DImage Im1(iWidth, iHeight, 3);
+	double* pImgDt = Im1.data();
+	for(int x = 0; x < iWidth; x++)
+	{
+		for(int y = 0; y < iHeight; y++)
+		{
+			RGBQUAD c = Img.GetPixelColor(x, iHeight - 1 - y);
+			pImgDt[y * iWidth * 3 + x * 3] = double(c.rgbRed) / 255.0;
+			pImgDt[y * iWidth * 3 + x * 3 + 1] = double(c.rgbGreen) / 255.0;
+			pImgDt[y * iWidth * 3 + x * 3 + 2] = double(c.rgbBlue) / 255.0;
+		}
+	}
+
+	Img.Load(pRfFrm->ImgFileName().c_str());
+	DImage Im2(iWidth, iHeight, 3);
+	pImgDt = Im2.data();
+	for(int x = 0; x < iWidth; x++)
+	{
+		for(int y = 0; y < iHeight; y++)
+		{
+			RGBQUAD c = Img.GetPixelColor(x, iHeight - 1 - y);
+			pImgDt[y * iWidth * 3 + x * 3] = double(c.rgbRed) / 255.0;
+			pImgDt[y * iWidth * 3 + x * 3 + 1] = double(c.rgbGreen) / 255.0;
+			pImgDt[y * iWidth * 3 + x * 3 + 2] = double(c.rgbBlue) / 255.0;
+		}
+	}
+
+	DImage V_x, V_y, WrpI2;
+	OpticalFlow::Coarse2FineFlow(V_x, V_y, WrpI2, Im1, Im2, alpha, Rt, MnWd, ItrNm_OtFwPDE, ItrNm_InFwPDE, ItrNm_CG);
+
+	Wml::GMatrix<Wml::Vector2d> OpFwMp(iWidth, iHeight);
+	for(int x = 0; x < iWidth; x++)
+	{
+		for(int y = 0; y < iHeight; y++)
+		{
+			double v_x = V_x.data()[y * iWidth + x];
+			double v_y = V_y.data()[y * iWidth + x];
+			OpFwMp(x, y) = Wml::Vector2d(v_x, v_y);
+		}
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	//testing
+	{
+		CxImage OpFwImg(iWidth, iHeight, 24);
+
+
+		for(int y = 0; y < iHeight; y++)
+		{
+			for(int x = 0; x < iWidth; x++)
+			{
+				Wml::Vector3<uchar> color;
+				computeColor(OpFwMp(x, y).X(), OpFwMp(x, y).Y(), &color[0]);
+				OpFwImg.SetPixelColor(x, iHeight - 1 - y, RGB(color[0], color[1], color[2]));
+			}
+		}
+
+		CString OpFwImgNm = GetFileDir(pFrm->ImgFileName().c_str()) + "Tmp\\";
+		OpFwImgNm.AppendFormat("OptFlow%d-%d.png", pFrm->frameno, pRfFrm->frameno);
+		OpFwImg.Save((LPCTSTR)OpFwImgNm, CXIMAGE_FORMAT_PNG);
+	}
+	//////////////////////////////////////////////////////////////////////////
+
+	return OpFwMp;
+}

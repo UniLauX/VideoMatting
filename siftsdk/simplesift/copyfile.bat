@@ -1,0 +1,6 @@
+copy /Y "D:\dongzilong\work\myprojects\siftdescriptor\siftdescriptor\*.h" "Z:\Vision\Tracking\FeatureTracking\simplesift\include\"
+copy /Y "D:\dongzilong\work\myprojects\siftdescriptor\siftdescriptor\siftcompatible\*.h" "Z:\Vision\Tracking\FeatureTracking\simplesift\include\siftcompatible\"
+copy /Y "D:\dongzilong\work\myprojects\siftdescriptor\lib\*.*" "Z:\Vision\Tracking\FeatureTracking\simplesift\lib\"
+copy /Y "D:\dongzilong\work\myprojects\siftdescriptor\sample\*.h" "Z:\Vision\Tracking\FeatureTracking\simplesift\sample\"
+copy /Y "D:\dongzilong\work\myprojects\siftdescriptor\sample\*.cpp" "Z:\Vision\Tracking\FeatureTracking\simplesift\sample\"
+copy /Y "D:\dongzilong\work\myprojects\siftdescriptor\sample\*.vcproj" "Z:\Vision\Tracking\FeatureTracking\simplesift\sample\"

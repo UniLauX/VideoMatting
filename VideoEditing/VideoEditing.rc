@@ -1,0 +1,876 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\VideoEditing.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VideoEditing.ico"
+IDR_VideoEditingTYPE    ICON                    "res\\VideoEditingDoc.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLBAR_PLAY        BITMAP                  "res\\bmp00001.bmp"
+IDB_SLIDER_HOVER        BITMAP                  "res\\slider.bmp"
+IDB_SLIDER_NORMAL       BITMAP                  "res\\slidern.bmp"
+IDB_PLAYBAR_MENU        BITMAP                  "res\\PlayBarMenu.bmp"
+IDB_PLAYBAR_MENU_DISABLE BITMAP                  "res\\PlayBarMenuDis.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  20, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_GRABBER_RECTANGLEGRAB
+    BUTTON      ID_GRABBER_FOREGROUNDBRUSH
+    BUTTON      ID_GRABBER_BACKGROUNDBRUSH
+    BUTTON      ID_PEN_FOREGROUND
+    BUTTON      ID_PEN_BACKGROUND
+    BUTTON      ID_PEN_UNKNOWN
+    SEPARATOR
+    BUTTON      ID_RUN_RUN
+    BUTTON      ID_RUN_RUNVIDEO
+    BUTTON      ID_RUN_STOP
+    BUTTON      ID_RUN_MATTING
+    BUTTON      ID_RUN_TEMPORALMATTING
+    SEPARATOR
+    BUTTON      ID_EDIT_MOVE
+    BUTTON      ID_EDIT_ZOOMIN
+    BUTTON      ID_EDIT_ZOOMOUT
+    BUTTON      ID_EDIT_FIT
+    BUTTON      ID_BUTTON_POLYGON
+    BUTTON      ID_BUTTON_AddNewLayer
+    BUTTON      ID_BUTTON_TRIMAP_REFINE
+    BUTTON      ID_BUTTON_BEIZER
+END
+
+IDR_TOOLBAR_PLAY TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_PLAY_TOSTART
+    BUTTON      ID_PLAY_STEPLAST
+    BUTTON      ID_PLAY_BACKWARD
+    BUTTON      ID_PLAY_STOP
+    BUTTON      ID_PLAY_FORWARD
+    BUTTON      ID_PLAY_STEPNEXT
+    BUTTON      ID_PLAY_TOEND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open Image...\tCtrl+O",      ID_FILE_OPEN
+        MENUITEM "Load Project...",             ID_FILE_OPENPROJECT
+        MENUITEM "&Save Project...\tCtrl+S",    ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "I&mport  RotoCurves",         ID_FILE_IMPORTROTOCURVES
+        MENUITEM "E&xport RotoCurves",          ID_FILE_EXPORTROTOCURVES
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Move",                        ID_EDIT_MOVE
+        MENUITEM "Zoom In",                     ID_EDIT_ZOOMIN
+        MENUITEM "Zoom Out",                    ID_EDIT_ZOOMOUT
+        MENUITEM "Fit",                         ID_EDIT_FIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Edit",                        ID_VIEW_EDITWINDOW
+        MENUITEM "Trimap",                      ID_VIEW_TRIMAP
+        MENUITEM "Depth",                       ID_VIEW_DEPTH
+        MENUITEM "Result",                      ID_VIEW_RESULTWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Dock Bar",                    ID_VIEW_DOCKBAR
+    END
+    POPUP "PreProcess"
+    BEGIN
+        MENUITEM "Optical flow",                ID_PREPROCESS_OPTICALFLOW
+    END
+    POPUP "Grabber"
+    BEGIN
+        MENUITEM "GrabCut",                     ID_GRABBER_GRABCUT
+        MENUITEM "ClosedForm matting",          ID_GRABBER_CLOSEDFORMMATTING
+        MENUITEM SEPARATOR
+        MENUITEM "Rectangle grab",              ID_GRABBER_RECTANGLEGRAB
+        POPUP "Brush"
+        BEGIN
+            MENUITEM "Foreground",                  ID_GRABBER_FOREGROUNDBRUSH
+            MENUITEM "Background",                  ID_GRABBER_BACKGROUNDBRUSH
+        END
+        POPUP "Pen"
+        BEGIN
+            MENUITEM "Foreground",                  ID_PEN_FOREGROUND
+            MENUITEM "Background",                  ID_PEN_BACKGROUND
+        END
+    END
+    POPUP "Run"
+    BEGIN
+        POPUP "Mode"
+        BEGIN
+            MENUITEM "Picture",                     ID_MODE_PICTURE
+            MENUITEM "Video",                       ID_MODE_VIDEO
+        END
+        MENUITEM SEPARATOR
+        POPUP "Run"
+        BEGIN
+            MENUITEM "Frame",                       ID_RUN_RUN
+            MENUITEM "Video",                       ID_RUN_RUNVIDEO
+            MENUITEM "Refine",                      ID_RUN_REFINE
+        END
+        POPUP "Update"
+        BEGIN
+            MENUITEM "Global update",               ID_UPDATE_GLOBALUPDATE
+            MENUITEM "Local update",                ID_UPDATE_LOCALUPDATE
+        END
+        MENUITEM "Matting",                     ID_RUN_MATTING
+        MENUITEM "Temporal Matting",            ID_RUN_TEMPORALMATTING
+        MENUITEM "Stop",                        ID_RUN_STOP
+        MENUITEM "Get Final Layer",             ID_RUN_GETFINALLAYER
+        MENUITEM "Generate Default Layer Depth", ID_RUN_GENERATEDEFLAYERDEPTH
+        MENUITEM "Generate Unknown Optical Flow", ID_RUN_GENERATEUNKNOWNOPTICALFLOW
+        MENUITEM "RotoScoping",                 ID_RUN_ROTOSCOPING
+    END
+    POPUP "Setting"
+    BEGIN
+        MENUITEM "Color",                       ID_SETTING_COLOR
+        MENUITEM "Local Win",                   ID_SETTING_LOCALWIN
+        MENUITEM "Matting",                     ID_SETTING_PREFERENCE
+    END
+    POPUP "PostProcess"
+    BEGIN
+        MENUITEM "Layer Optical flow",          ID_POSTPROCESS_LAYEROPTICALFLOW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About VideoEditing...",      ID_APP_ABOUT
+        MENUITEM "Test fill holes",             ID_HELP_TESTFILLHOLES
+        MENUITEM "Depth Composition",           ID_HELP_DEPTHCOMPOSITION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PLAY DIALOGEX 0, 0, 378, 12
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 212, 67
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About VideoEditing"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VideoEditing Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "CVG @ CAD ZheJiang University www.zjucvg.net \nCopyright (C) 2009",IDC_STATIC,40,37,135,23
+    DEFPUSHBUTTON   "OK",IDOK,155,6,50,16,WS_GROUP
+END
+
+IDD_PRA_DIALOG DIALOGEX 0, 0, 162, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,25,123,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,123,50,14
+    CTEXT           "Level:",IDC_STATIC,12,20,51,13
+    CTEXT           "Active level:",IDC_STATIC,12,40,51,13
+    CTEXT           "Win size:",IDC_STATIC,12,60,51,13
+    CTEXT           "Alpha threshold:",IDC_STATIC,12,80,57,13
+    CTEXT           "Epsilon:",IDC_STATIC,12,100,51,13
+    EDITTEXT        IDC_EDIT1,70,19,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,70,39,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,70,59,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,70,79,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,70,99,68,14,ES_AUTOHSCROLL
+END
+
+IDD_PARAM_CLASSIFIER DIALOGEX 0, 0, 164, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Local classifier"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,27,101,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,101,50,14
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,59,14,94,13
+    LTEXT           "BoundSize",IDC_STATIC,17,15,36,10
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,59,30,94,13
+    LTEXT           "Cutoff",IDC_STATIC,17,32,36,10
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,59,47,94,13
+    LTEXT           "epsilon",IDC_STATIC,17,49,36,10
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,59,64,94,13
+    LTEXT           "fore thres",IDC_STATIC,17,65,36,10
+    CONTROL         "",IDC_SLIDER5,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,59,81,94,13
+    LTEXT           "back thres",IDC_STATIC,17,82,36,10
+END
+
+IDD_DIALOG_EDITLAYER DIALOGEX 0, 0, 186, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add New Layer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,64,50,14
+    EDITTEXT        IDC_NAME_EDIT,69,17,73,16,ES_AUTOHSCROLL
+    CTEXT           "Name:",IDC_STATIC,16,20,47,12
+    CTEXT           "Type:",IDC_STATIC,15,42,52,14
+    COMBOBOX        IDC_COMBO_LAYERTYPE,68,40,74,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_MATTING_PARAM DIALOGEX 0, 0, 213, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,105,50,14
+    LTEXT           "Layer Name:",IDC_STATIC,7,28,42,8
+    EDITTEXT        IDC_EDIT_MAT_LAYER_NAME,55,25,58,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_MAT_SFRAME,121,25,21,14,ES_AUTOHSCROLL
+    LTEXT           "to",IDC_STATIC,151,28,8,8
+    EDITTEXT        IDC_EDIT_MAT_EFRAME,164,25,21,14,ES_AUTOHSCROLL
+    LTEXT           "Matting Alogrithm:",IDC_STATIC,7,58,60,8
+    COMBOBOX        IDC_COMBO_ALGORITHM,67,55,90,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Matting Mode:",IDC_STATIC,7,82,47,8
+    CONTROL         "Partition Image",IDC_RADIO_MAT_PART,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,63,82,65,10
+    CONTROL         "Whole Image",IDC_RADIO_MAT_WHOLE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,130,82,58,10
+END
+
+IDD_DIALOG_TRIMAPWIDTH DIALOGEX 0, 0, 128, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,54,50,14
+    LTEXT           "Width:",IDC_STATIC,23,22,22,11
+    EDITTEXT        IDC_EDIT_WIDTH,55,20,52,14,ES_AUTOHSCROLL
+END
+
+IDD_TEMPORAL_MATTING_DIALOG DIALOGEX 0, 0, 213, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,97,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,98,50,14
+    LTEXT           "Layer name:",IDC_STATIC,17,15,41,8
+    EDITTEXT        IDC_EDIT_TM_LAYERNAME,64,13,54,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Start:",IDC_STATIC,17,38,20,8
+    EDITTEXT        IDC_EDIT_TM_SFRAME,42,36,29,14,ES_AUTOHSCROLL
+    LTEXT           "End:",IDC_STATIC,81,38,16,8
+    EDITTEXT        IDC_EDIT_TM_EFRAME,106,36,29,14,ES_AUTOHSCROLL
+    LTEXT           "Step:",IDC_STATIC,143,38,18,8
+    EDITTEXT        IDC_EDIT_TM_STEP,163,36,29,14,ES_AUTOHSCROLL
+    LTEXT           "Spatial Weight:",IDC_STATIC,19,72,50,8
+    EDITTEXT        IDC_EDIT_TM_SWEIGHT,71,70,29,14,ES_AUTOHSCROLL
+    LTEXT           "Temporal Weigth:",IDC_STATIC,105,72,58,8
+    EDITTEXT        IDC_EDIT_TM_TEMWEIGHT,166,70,29,14,ES_AUTOHSCROLL
+    CONTROL         "Anchor First Frame",IDC_CHECK_ANCHOR_FIRST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,55,77,10
+    CONTROL         "Anchor Last Frame",IDC_CHECK_ANCHOR_LAST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,55,76,10
+END
+
+IDD_DIALOG_TEMPORAL_REFINE DIALOGEX 0, 0, 225, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Temporal Refine Param Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,23,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,86,50,14
+    LTEXT           "Layer Name:",IDC_STATIC,18,17,42,8
+    EDITTEXT        IDC_EDIT_LAYER_NAME,70,15,52,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Start Frame:",IDC_STATIC,18,42,42,8
+    LTEXT           "End Frame:",IDC_STATIC,123,42,38,8
+    EDITTEXT        IDC_EDIT_START_FRAME_REFINE,70,40,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END_FRAME_REFINE,167,40,44,14,ES_AUTOHSCROLL
+    CONTROL         "Whole Sequence Flow",IDC_CHECK_OPTICAL_GLOBAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,17,86,10
+END
+
+IDD_DIALOG_ROTOSCOPE DIALOGEX 0, 0, 135, 286
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VSCROLL
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "SaveMask",IDC_ROTOSCOPE_SAVEMASK,3,257,33,15
+    EDITTEXT        IDC_KL,20,10,40,14,ES_AUTOHSCROLL
+    LTEXT           "K:",IDC_STATIC,6,12,8,8
+    EDITTEXT        IDC_KU,73,10,40,14,ES_AUTOHSCROLL
+    LTEXT           "-",IDC_STATIC,63,12,8,8
+    LTEXT           "start index",IDC_STATIC,2,99,34,8
+    LTEXT           "end index",IDC_STATIC,5,115,32,8
+    EDITTEXT        IDC_STARTINDEX,39,93,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENDINDEX,39,112,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "RotoScoping Parameter",IDC_STATIC,0,0,125,129
+    LTEXT           "Frame :",IDC_STATIC,4,211,24,8
+    EDITTEXT        IDC_EDIT_FRAMEINDEX,34,209,26,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "/",IDC_STATIC,64,212,8,8
+    EDITTEXT        IDC_EDIT_FRAMETOTAL,71,209,26,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Pyramid Level:",IDC_STATIC,3,32,46,8
+    EDITTEXT        IDC_EDIT_PYR_LEVEL,55,29,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SAVE_START,40,259,17,12,ES_AUTOHSCROLL
+    LTEXT           "-",IDC_STATIC,60,261,8,8
+    EDITTEXT        IDC_SAVE_END,66,259,17,13,ES_AUTOHSCROLL
+    GROUPBOX        "AlphaSmooth Parameter",IDC_STATIC,0,135,125,67
+    EDITTEXT        IDC_EDIT_LB,24,146,23,14,ES_AUTOHSCROLL
+    LTEXT           "Lb :",IDC_STATIC,6,150,13,8
+    LTEXT           "bmin:",IDC_STATIC,3,166,18,8
+    EDITTEXT        IDC_EDIT_BMIN,24,163,23,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BMAX,79,164,23,13,ES_AUTOHSCROLL
+    LTEXT           "bmax:",IDC_STATIC,54,167,20,8
+    EDITTEXT        IDC_EDIT_LS,79,146,23,14,ES_AUTOHSCROLL
+    LTEXT           "Ls :",IDC_STATIC,58,151,12,8
+    CONTROL         "Preview",IDC_CHECk_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,87,259,35,13
+    PUSHBUTTON      "Import",IDC_BUTTON_IMPORT,5,239,50,14
+    PUSHBUTTON      "Export",IDC_BUTTON_EXPORT,61,239,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VideoEditing.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "VideoEditing.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_ROTOSCOPE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 279
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_MATTING_PARAM DLGINIT
+BEGIN
+    IDC_COMBO_ALGORITHM, 0x403, 20, 0
+0x6c43, 0x736f, 0x6465, 0x4620, 0x726f, 0x206d, 0x614d, 0x7474, 0x6e69, 
+0x0067, 
+    0
+END
+
+IDD_DIALOG_EDITLAYER DLGINIT
+BEGIN
+    IDC_COMBO_LAYERTYPE, 0x403, 13, 0
+0x7473, 0x7461, 0x6369, 0x7020, 0x616c, 0x656e, "\000" 
+    IDC_COMBO_LAYERTYPE, 0x403, 13, 0
+0x7473, 0x7461, 0x6369, 0x7220, 0x6769, 0x6469, "\000" 
+    IDC_COMBO_LAYERTYPE, 0x403, 13, 0
+0x6c70, 0x6e61, 0x2065, 0x6f6d, 0x6974, 0x6e6f, "\000" 
+    IDC_COMBO_LAYERTYPE, 0x403, 13, 0
+0x6972, 0x6967, 0x2064, 0x6f6d, 0x6974, 0x6e6f, "\000" 
+    IDC_COMBO_LAYERTYPE, 0x403, 16, 0
+0x6f6e, 0x726e, 0x6769, 0x6469, 0x6d20, 0x746f, 0x6f69, 0x006e, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "VideoEditing\n\nVideoEditing\n\n\nVideoEditing.Document\nVideoEditing.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "VideoEditing"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SEL_RECT             "Cutting region"
+    ID_SEL_FORE             "Foreground"
+    ID_SEL_BACK             "Background"
+    ID_GRABBER_RECTANGLEGRAB "Rectangle grabber"
+    ID_GRABBER_FOREGROUNDBRUSH "Foreground-'F'"
+    ID_GRABBER_BACKGROUNDBRUSH "Background - 'G'"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RUN_RUN              "Run-'E'"
+    ID_PLAY_TOSTART         "Start-'Z'"
+    ID_PLAY_TOEND           "End-'C'"
+    ID_PLAY_STEPLAST        "Backward step one-'A'"
+    ID_PLAY_STEPNEXT        "Forward step one-'D'"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RUN_STOP             "Stop computing-'T'"
+    ID_RUN_RUNVIDEO         "Video Processing-'R'"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PEN_FOREGROUND       "Foreground Pen-'V'"
+    ID_PEN_BACKGROUND       "Background Pen-'B'"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_DOCKBAR         "show or hide the dock bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_IMPORTROTOCURVES "import rotocurves..."
+    ID_FILE_EXPORTROTOCURVES "export rotocurves..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PARAM_GRABCUT DIALOGEX 0, 0, 126, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_PARAM_CLOSEDFORM DIALOGEX 0, 0, 144, 285
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VSCROLL
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Alpha thresh",IDC_STATIC,16,98,43,8
+    CTEXT           "Win size",IDC_STATIC,16,72,37,8
+    CTEXT           "Epsilon",IDC_STATIC,16,123,45,8
+    EDITTEXT        IDC_EDIT_CF_LEVEL,64,26,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CF_ACTIVELEVEL,64,46,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CF_WINSIZE,64,72,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CF_THRESHOLD,64,94,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CF_EPSILON,64,119,60,12,ES_AUTOHSCROLL
+    CTEXT           "Level",IDC_STATIC,16,28,34,8
+    CTEXT           "Active level",IDC_STATIC,16,50,40,8
+    GROUPBOX        "Closed Form Matting",IDC_STATIC,4,14,120,131
+    GROUPBOX        "",IDC_STATIC,4,148,120,77
+    CONTROL         "Frame Matting ",IDC_CHECK_FRAME_MAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,147,64,10
+    LTEXT           "Algorithm:",IDC_STATIC,15,167,34,8
+    COMBOBOX        IDC_COMBO_ALGO,55,166,67,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mode:",IDC_STATIC,15,189,21,8
+    CONTROL         "Imge partition",IDC_RADIO_IMPART,"Button",BS_AUTORADIOBUTTON | WS_GROUP,57,188,61,10
+    CONTROL         "Whole image",IDC_RADIO_IMGWHOLE,"Button",BS_AUTORADIOBUTTON,57,204,57,10
+    GROUPBOX        "Matting",IDC_STATIC,4,229,120,49
+    CONTROL         "",IDC_SLIDER_TRIMAPALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,9,259,80,13
+    EDITTEXT        IDC_EDIT_TRIMAPALPHA,90,258,25,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Trimap Blending Alpha",IDC_STATIC,15,243,70,10
+END
+
+IDD_PARAM_SYSTEM DIALOGEX 0, 0, 191, 364
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "PolygonAdjust",IDC_STATIC,7,86,147,62
+    LTEXT           "PointRadius:",IDC_STATIC,16,122,41,8
+    LTEXT           "LineDiff:",IDC_STATIC,16,103,28,8
+    GROUPBOX        "Segmentation",IDC_STATIC,7,151,147,73
+    LTEXT           "VideoWinSize:",IDC_STATIC,13,166,46,8
+    LTEXT           "UpdateWinSize:",IDC_STATIC,13,186,52,8
+    EDITTEXT        IDC_EDIT_VideoWinSize,72,164,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_UpdateWinSize,72,185,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Iterate time:",IDC_STATIC,13,207,52,8
+    EDITTEXT        IDC_EDIT_ITERATETIME,72,204,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Reset",IDC_BUTTON_ResetPara,53,334,50,14
+    LTEXT           "CosThreshold:",IDC_STATIC,15,39,47,8
+    EDITTEXT        IDC_EDIT_PolygonLineDiff,73,100,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PolygonPointRadius,73,120,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Segmentation",IDC_STATIC,7,226,147,101
+    CONTROL         "",IDC_SLIDER_BoundSize,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,239,48,13
+    LTEXT           "BoundSize",IDC_STATIC,15,239,36,10
+    CONTROL         "",IDC_SLIDER_Cutoff,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,255,48,13
+    LTEXT           "Cutoff",IDC_STATIC,15,257,36,10
+    CONTROL         "",IDC_SLIDER_Epsilon,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,271,48,13
+    LTEXT           "epsilon",IDC_STATIC,15,274,36,10
+    CONTROL         "",IDC_SLIDER_ForeThres,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,289,49,13
+    LTEXT           "fore thres",IDC_STATIC,15,290,36,10
+    CONTROL         "",IDC_SLIDER_BackThres,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,306,49,13
+    LTEXT           "back thres",IDC_STATIC,15,306,36,10
+    EDITTEXT        IDC_EDIT_BoundSize,108,238,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Cutoff,108,254,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Epsilon,108,272,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ForeThres,108,289,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_BackThres,107,306,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "PolygonGenerate",IDC_STATIC,7,22,147,58
+    CONTROL         "",IDC_SLIDER_PolygonCosThreshold,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,70,38,48,13
+    LTEXT           "DisThreshold:",IDC_STATIC,15,58,44,8
+    CONTROL         "",IDC_SLIDER_PolygonDisThreshold,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,70,57,48,13
+    EDITTEXT        IDC_EDIT_CosThreshold,116,36,33,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DisThreshold,116,55,33,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_MULTILAYER_DLG DIALOGEX 0, 0, 132, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Layer list",IDC_STATIC,7,7,118,153
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,22,117,138
+    PUSHBUTTON      "Edit...",IDC_BUTTON_EDIT,7,170,50,14
+    PUSHBUTTON      "Merge...",IDC_BUTTON_MERGE,75,170,50,14
+    CONTROL         "Select point",IDC_CHECK_ENABLE_DEPTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,195,53,10
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,209,91,13
+    EDITTEXT        IDC_EDIT_DEPTH,100,206,17,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PARAM_GRABCUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_PARAM_CLOSEDFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 124
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 278
+        HORZGUIDE, 6
+        HORZGUIDE, 72
+    END
+
+    IDD_PARAM_SYSTEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 357
+    END
+
+    IDD_MULTILAYER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\VideoEditing.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,3 @@
+copy /Y "E:\dongzilong\library\AlgorithmofPaper\Tracking\sift-gpu\SiftGPU-V340\SiftGPU\SiftGPU\bin\*.dll" "Z:\Vision\Tracking\FeatureTracking\SiftGPU\bin\"
+copy /Y "E:\dongzilong\library\AlgorithmofPaper\Tracking\sift-gpu\SiftGPU-V340\SiftGPU\SiftGPU\bin\*.lib" "Z:\Vision\Tracking\FeatureTracking\SiftGPU\lib\"
+copy /Y "E:\dongzilong\library\AlgorithmofPaper\Tracking\sift-gpu\SiftGPU-V340\SiftGPU\SiftGPU\bin\*.dll" "D:\dongzilong\work\myprojects\siftdescriptor\bin\"

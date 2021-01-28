@@ -1,0 +1,3 @@
+1.This version rewrite the files of motionEstiamte.h and motionEstimate.cpp.
+2.Rewrite the optical flow part, based on Ce Liu's algorithm.
+3.The computation results are accurate, while the speed is a bit slow.
