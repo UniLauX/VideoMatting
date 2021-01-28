@@ -10,7 +10,7 @@ Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang Un
 
 
 #### Software Interface
-![image](https://github.com/UniLauX/VideoMatting/edit/master/snapcut.png)
+![image](https://github.com/UniLauX/VideoMatting/blob/master/snapcut.png)
 
 
 #### Abstract
