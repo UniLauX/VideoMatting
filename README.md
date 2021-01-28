@@ -4,9 +4,14 @@ The design and implementation of interactive video cutout system, 2013. <br>
 [Yu Liu](https://sites.google.com/site/yuliuunilau/home)' bachelor thesis in Software Engineering, Southwest University. <br>
 Supervisor: [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/)(Zhejiang University), Kaijin Qiu(Southwest University).
 
-## Thesis and Demo
+#### Thesis and Demo
 [Bachelor Thesis](https://drive.google.com/file/d/1gKGaUhhrVTZFG1N7YknHF86F6KBQb8Zv/view) <br>
 [Software Video Demo](https://www.youtube.com/watch?v=sVaJevQcH-g&feature=youtu.be)
+
+
+#### Software Interface
+![image](https://github.com/UniLauX/VideoMatting/edit/master/snapcut.png)
+
 
 #### Abstract
 As a vital research direction of computer vision, Video Cutout System can track and predict
@@ -29,6 +34,7 @@ Key word: Video SnapCut; GrabCut; Video CutOut; Interactive; Multi-thread.
 Visual Studio 2005, MFC Framework </br>
 C++ <br>
 OpenCV 2.4.10 and CxImage <br>
+
 
 #### Acknowledgement: 
 This work is done by Yu Liu was a Internship at State Key Lab of CAD and CG, work with Prof. Guofeng Zhang. The prototype software was based on some implementation from [Computer Vision Group](http://www.zjucvg.net/) of  State Key Lab of CAD and CG, Zhejiang University.
